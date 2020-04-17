@@ -1,0 +1,341 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Lab6MdiApplication
+</name>
+</assembly>
+<members>
+<member name="T:Lab6MdiApplication.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Lab6MdiApplication.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Lab6MdiApplication.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Lab6MdiApplication.Car.IdentificationNumber">
+ <summary>
+ This is the property for the carIdentificationNumber Attribute it is readOnly is it
+ only has a get and not a set
+ </summary>
+ <returns> carIdentificationNumber as an integer </returns>
+</member>
+<member name="P:Lab6MdiApplication.Car.Count">
+ <summary>
+ This is the property for the carCount Shared Attribute it is readOnly is it
+ only has a get and not a set
+ </summary>
+ <returns> carCount as an integer </returns>
+</member>
+<member name="P:Lab6MdiApplication.Car.Make">
+ <summary>
+ This is the property for the for the carMake Attribute it has get and set
+ </summary>
+ <returns> carMake as a String </returns>
+</member>
+<member name="P:Lab6MdiApplication.Car.Model">
+ <summary>
+ This is the property for the for the carModel Attribute it has get and set
+ </summary>
+ <returns> carModel as a String </returns>
+</member>
+<member name="P:Lab6MdiApplication.Car.Year">
+ <summary>
+ This is the property for the for the carYear Attribute it has get and set
+ </summary>
+ <returns> carYear as an Integer </returns>
+</member>
+<member name="P:Lab6MdiApplication.Car.Price">
+ <summary>
+ This is the property for the for the carPrice Attribute it has get and set
+ </summary>
+ <returns> carPrice as a Decimal </returns>
+</member>
+<member name="P:Lab6MdiApplication.Car.NewStatus">
+ <summary>
+ This is the property for the for the newStatus Attribute it has get and set
+ </summary>
+ <returns> carMake as a String </returns>
+</member>
+<member name="M:Lab6MdiApplication.Car.#ctor">
+ <summary>
+ This is the default constructor, it makes a plain car with default attributes
+ </summary>
+</member>
+<member name="M:Lab6MdiApplication.Car.#ctor(System.String,System.String,System.Int32,System.Boolean,System.Decimal)">
+ <summary>
+ This is the Parameterized constructor, it makes a car with the given parameters
+ </summary>
+ <param name="make"> sets this value to the carMake attribute</param>
+ <param name="model">sets this value to the carModel attribute</param>
+ <param name="year">sets this value to the carYear attribute</param>
+ <param name="isNew">sets this value to the newStatus attribute</param>
+ <param name="price">sets this value to the carPrice attribute</param>
+</member>
+<member name="M:Lab6MdiApplication.Car.GetCarData">
+ <summary>
+ This is a function that creates a string that represents the whole car object
+ </summary>
+ <returns>string representation of the car</returns>
+</member>
+<member name="M:Lab6MdiApplication.frmCars.btnExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is the event for the exit button on the form. This is the button that causes the form to close,
+ it does this using the Close() method of the form class and "Me" refers to current form that most of this
+ program is contained in.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmCars.btnReset_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is the event that is called when the reset button is clicked. It resets the values on the
+ form to the defaults using the SetDesfaults() subroutine. Note the List View is un-effected.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuFileSave_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is the event for when the save button is clicked it calls the save function of the child form if
+ if the child form is a text editor, otherwise it displays a message explianing the problem
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuFileSaveAs_Click(System.Object,System.EventArgs)">
+ <summary>
+ Same general funtion as the save button but it clicks the child form's save as button
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuFileOpen_Click(System.Object,System.EventArgs)">
+ <summary>
+ this is called when the open button is clicked. It uses the CreateNewTextEditor() function to
+ create a new text editor and passes the value of false which causes the function to open
+ an open file dialog
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuFileNew_Click(System.Object,System.EventArgs)">
+ <summary>
+ called when the new button is clicked. Same functionality as open button but passes true to
+ the function to denote that it is not to open an ofd and just create the new form
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuFileClose_Click(System.Object,System.EventArgs)">
+ <summary>
+ called when the close button is clicked. Closes the active form until there are
+ no more children in which case closes the parent form
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuFileExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ this is called when the exit putton is clicked. Creates a list of all the children
+ and itterates through them closing them all. Then closes itself
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuHelpAbout_Click(System.Object,System.EventArgs)">
+ <summary>
+ this is called when the about button is clicked it just displays a message about 
+ the application
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuEditCut_Click(System.Object,System.EventArgs)">
+ <summary>
+ this is called when the cut button is clicked. if the active child is a text 
+ editor, use it's cut button else beep to let the user know they've been bad
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuEditCopy_Click(System.Object,System.EventArgs)">
+ <summary>
+ this is called when the copy button is used. it has the exact same functionality of 
+ cut exept it copies
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuEditPaste_Click(System.Object,System.EventArgs)">
+ <summary>
+ called when paste is clicked. same as the above 2 but it pastes
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuWindowCascade_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is called when the Cascade button is clicked. Its uses the built in LayoutMdi sub
+ to make all the child forms cascade
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuWindowTileVertical_Click(System.Object,System.EventArgs)">
+ <summary>
+ this is called when the tile vertical button is pressed. It uses the same sub as cascade 
+ but passes the MdiLayout.TileVertical value instead
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuWindowTileHorizonal_Click(System.Object,System.EventArgs)">
+ <summary>
+ this is called when the tile horizontal button is pressed. It uses the same sub as cascade 
+ but passes the MdiLayout.TileHorizontal value instead
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.mnuWindowCarList_Click(System.Object,System.EventArgs)">
+ <summary>
+ this is called when the open car list button is pressed, it just creates a new car list and sets
+ it as a child of this form
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmMdiMain.CreateNewTextEditor(System.Boolean)">
+ <summary>
+ this is a subroutine that is used to create new text editors. It takes a bool 
+ that denotes whether you want the new text editor to be blank or to use an ofd 
+ to open a file.
+ </summary>
+ <param name="isBlank"> boolean </param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.mnuHelpAbout_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is the event that is called when the about button is pressed. It displays a helpful little message
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.frmTextEdit_Shown(System.Object,System.EventArgs)">
+ <summary>
+ This is an event that is called when the form is shown, it checks if the for has a parent and
+ if it does it hide the menu strip
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.mnuNew_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is the event that is called when teh "New" button is clicked
+ it first calls the ConfirmClose() function and then depending on the result it creates a new file
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.mnuOpen_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is the event that is called when the open button is clicked. It calls the ConfirmClose()
+ function and depending on the result it opens a file
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.mnuCopy_Click(System.Object,System.EventArgs)">
+ <summary>
+ Boring old copy event. Quite simple it just sets the clipboard text to the selected text
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.mnuCut_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is the cut event, it is slightly more involved than the copy event. First it stores the cursor 
+ location, then sets the text in the textbox to be the text that was in the textbox - the selected text.
+ It then puts the cursor back to were it was. The cursor part probably wasn't needed but it felt weird that
+ it would reset it to the beginning.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.mnuPaste_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is the paste event, slightly more involved than cut. Saves cursor position,
+ removes the selected text and inserts the clipboard text. Then it puts the cursor at the end of
+ the pasted text. Once again the cursor stuff wasn't nessisary but it makes me feel good.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.mnuSave_Click">
+ <summary>
+ This is the save button event, but it is also a function. If there is a file open just save to the same file, if not
+ use the save as button.
+ </summary>
+ <returns>True if it saves, false if it does not</returns>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.mnuSaveAs_Click">
+ <summary>
+ This is the save as button event, but like the save event/function it is also a function.
+ This event/function opens a save file dialog and saves the file in the specified location.
+ </summary>
+ <returns>True if it saves, false if it does not</returns>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.mnuExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is the exit button event handler, it will first call the ConfirmClose() function and then maybe 
+ close depending on the result
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.txtMainBox_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ This is the event handler for when the user changes the contents of the text box.
+ All it does is let everyone know that things have changed.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.frmTextEdit_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ This is an event that is called when the form is closing and it just 
+ checks to make sure the user really wants to close the form
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.SaveFile(System.String)">
+ <summary>
+ This is the sub that saves the file it is called in the save and save as event handlers.
+ </summary>
+ <param name="path"> the path to write to </param>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.UpdateFormTitle">
+ <summary>
+ This is the sub that updates the title. if the file has a name the title reflects that
+ </summary>
+</member>
+<member name="M:Lab6MdiApplication.frmTextEdit.ConfirmClose">
+ <summary>
+ This is the function that confirms if the user wants to close file or open a new file. If the file has been modified since
+ it was last saved it will ask if the user wishes to save and bring up the coresponding save menu. 
+ There is also a fancy little bit of recursion
+ </summary>
+ <returns>True if the user wishes to close, false otherwise </returns>
+</member>
+</members>
+</doc>

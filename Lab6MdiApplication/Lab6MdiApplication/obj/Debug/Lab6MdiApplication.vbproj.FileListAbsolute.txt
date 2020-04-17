@@ -1,0 +1,14 @@
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\obj\Debug\Lab6MdiApplication.frmCars.resources
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\obj\Debug\Lab6MdiApplication.frmMdiMain.resources
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\obj\Debug\Lab6MdiApplication.frmTextEdit.resources
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\obj\Debug\Lab6MdiApplication.Resources.resources
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\obj\Debug\Lab6MdiApplication.vbproj.GenerateResource.cache
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\obj\Debug\Lab6MdiApplication.vbproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\bin\Debug\Lab6MdiApplication.exe.config
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\bin\Debug\Lab6MdiApplication.exe
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\bin\Debug\Lab6MdiApplication.pdb
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\bin\Debug\Lab6MdiApplication.xml
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\obj\Debug\Lab6MdiApplication.exe
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\obj\Debug\Lab6MdiApplication.xml
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\obj\Debug\Lab6MdiApplication.pdb
+C:\Users\micha\Documents\1NETD\Labs\Lab 6\Lab6MdiApplication\Lab6MdiApplication\obj\Debug\Lab6MdiApplication.vbprojAssemblyReference.cache
